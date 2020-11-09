@@ -4,8 +4,11 @@ from selenium.webdriver.common.by import By
 import time,os
 
 def getCSV():
+    # remove past file
     if os.path.exists("info\\covid19dataexport.csv"):
         os.remove("info\\covid19dataexport.csv")
+
+
     options = webdriver.ChromeOptions()
     preferences = {"download.default_directory": str(
         Path().absolute())+"\\info\\"}
@@ -23,8 +26,12 @@ def getCSV():
         By.XPATH, "//*[@id=\"DataTables_Table_0_wrapper\"]/div[5]/button[1]").click()
     driver.find_element(
         By.XPATH, "//*[@id=\"DataTables_Table_0_wrapper\"]/div[5]/button[1]").click()
-    print("done")
-
+    driver.quit()
+    # delete .tmp files
+    directory = os.listdir("info\\")
+    for file in directory:
+        if file.endswith(".tmp"):
+            os.remove(os.path.join("info\\",file))
 
 if __name__ == "__main__":
     getCSV()

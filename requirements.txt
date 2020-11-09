@@ -1,4 +1,4 @@
 jupyter==1.0.0
 matplotlib==3.3.2
-numpy==1.19.3
+numpy==1.19.3       # 1.19.4 may have a bug/conflict with matplotlib
 selenium==3.141.0

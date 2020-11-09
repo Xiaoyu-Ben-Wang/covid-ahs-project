@@ -6,7 +6,6 @@
  - python packages in `requirements.txt`
  - requires [chromedriver](https://chromedriver.chromium.org/) to be in PATH or in directory for web scraping
 
-----
 ## Table of Contents
 1. Web Scraping with Python
 2. Visualization and Prediction with Jupyter
@@ -14,11 +13,9 @@
 
 I am currently working on step 2.
 
-----
 ## Web Scraping with Python
 A simple python scraping script was built with the selenium package and chromedriver. Running `scrape.py` will automatically acces the [AHS website](https://www.alberta.ca/stats/covid-19-alberta-statistics.htm) and download the latest csv file to the local `info/` directory.
 
-----
 ## Visualization
 **Mean**:
 Taking the daily mean using a step size of (1/n). This is the same calculated result as (sum of cases)/(# of days), with a very minor improvement in efficiency as you do not need to recalculate the sum for each new day.
@@ -26,7 +23,6 @@ Taking the daily mean using a step size of (1/n). This is the same calculated re
 **Weighted Average**:
 Taking the weighted average using a constant step size. More "recent" days in calculation are weighed more heavily depending on the exact step size.
 
-----
 ## Sources
 Reinforcement Learning Algorithms:
 

@@ -24,7 +24,7 @@ A simple python scraping script was built with the selenium package and chromedr
 
 ## Visualization
 
-<img src="README_src/averages.png" width="500">
+<img src="README_src/averages.png">
 
 **Mean**:
 Taking the daily mean using a step size of (1/n). This is the same calculated result as (sum of cases)/(# of days), with a very minor improvement in efficiency as you do not need to recalculate the sum for each new day.

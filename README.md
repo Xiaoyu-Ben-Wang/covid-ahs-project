@@ -14,7 +14,13 @@
 I am currently working on step 2.
 
 ## Web Scraping with Python
-A simple python scraping script was built with the selenium package and chromedriver. Running `scrape.py` will automatically acces the [AHS website](https://www.alberta.ca/stats/covid-19-alberta-statistics.htm) and download the latest csv file to the local `info/` directory.
+A simple python scraping script was built with the selenium package and chromedriver. Running `scrape.py` will automatically acces the [AHS website](https://www.alberta.ca/stats/covid-19-alberta-statistics.htm) and download the latest csv files to the local `info/` directory. Two CSV files will be downloaded. The first lists all cases ever recorde by AHS, while the second gives the current status for all regions in Alberta (Calgary, Edmonton, Counties, etc.).
+
+<br>
+
+*Improvements to be made:*
+- Currently the script waits for a static amount of time for the page to load. Improvements could be made by detecting when the page is fully loaded before continuing.
+- Using a library such as BeautifulSoup to also store the most recent date the database was updated.
 
 ## Visualization
 **Mean**:
@@ -22,6 +28,11 @@ Taking the daily mean using a step size of (1/n). This is the same calculated re
 
 **Weighted Average**:
 Taking the weighted average using a constant step size. More "recent" days in calculation are weighed more heavily depending on the exact step size.
+
+<br>
+
+*Improvements to be made:*
+- Planning to use more complex algorithms for future projects, including applications of reinforcement learning algorithms.
 
 ## Sources
 Reinforcement Learning Algorithms:

@@ -32,7 +32,26 @@ Taking the daily mean using a step size of (1/n). This is the same calculated re
 **Weighted Average**:
 Taking the weighted average using a constant step size. More "recent" days in calculation are weighed more heavily depending on the exact step size.
 
+----
 
+<img src="README_src/regression-1&2.png">
+
+Linear: β<sub>0</sub> + β<sub>1</sub>t
+
+Quadratic: β<sub>0</sub> + β<sub>1</sub>t + β<sub>2</sub>t<sup>2</sup>
+
+
+**Linear and Quadratic Curve Fitting**:
+It is clear that both linear and quadratic models are not sufficient to model the growth of cases per day in Alberta. It's interesting to note how the most recent increase is faster than our modelled quadratic curve though.
+
+<img src="README_src/regression-3&4.png">
+
+Cubic = β<sub>0</sub> + β<sub>1</sub>t + β<sub>2</sub>t<sup>2</sup> + β<sub>3</sub>t<sup>3</sup>
+
+Quartic = β<sub>0</sub> + β<sub>1</sub>t + β<sub>2</sub>t<sup>2</sup> + β<sub>3</sub>t<sup>3</sup> + β<sub>4</sub>t<sup>4</sup>
+
+**Cubic and Quartic Curve Fitting**:
+Once we increase the degree of the polynomial model, it becomes much more accurate. Once we go past 3, the curve essentially becomes the same.
 
 
 <br>

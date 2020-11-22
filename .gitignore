@@ -2,4 +2,3 @@
 .venv/
 chromedriver.exe
 __pycache__/
-README_src/*
